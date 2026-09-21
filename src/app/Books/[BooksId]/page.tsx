@@ -13,10 +13,22 @@ interface BooksDetailsCartType{
 
 
 const BooksDataCart =async():Promise<BookType[]>=>{
+try{
+
+
+
   const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`);
   const data =await res.json()
-  return data
+  return data}
+  catch(error){
+    console.error("Error fetching",error);
+    
+    return[]
+  }
+ 
+
 }
+
 
 
 

@@ -3,8 +3,15 @@ import BookCart from '../BooksCart/BookCart';
 import { BookType } from '../booksType/BooksType';
 
 const BooksPromise =async()=>{
+  try{
+
+ 
   const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`);
-return res.json()
+return res.json() }
+catch(error){
+console.error("Error Fatching", error);
+return []
+}
 }
 
 

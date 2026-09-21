@@ -13,7 +13,7 @@ const WishlistButton = ({booksData}:{booksData:BookType}) => {
     throw new globalThis.Error("WishlistButton must be used inside BooksProviders")
   }
 
-  const {wishlistBooks,setWishlishBooks} = context
+  const {setWishlishBooks} = context
 
   const handelWishlistBooks = ()=>{
 

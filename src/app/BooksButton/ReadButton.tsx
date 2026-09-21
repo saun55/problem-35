@@ -15,7 +15,7 @@ if(!context){
   throw new globalThis.Error("ReadButton must be used inside BooksProviders");
 }
 
-const {readBooks, setReadBooks} = context
+const {setReadBooks} = context
 
   const handelReadBooks = () =>{
     setReadBooks((prev)=>[...prev, booksData])
