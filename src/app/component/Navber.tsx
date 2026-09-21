@@ -5,6 +5,8 @@ const Navber = () => {
   const link= <> 
         <li><Link href={"/"}>Home</Link></li>
 
+        <li><Link href={"../Books"}>Books</Link></li>
+
         <li><Link href={"/ListedBooks"}>Listed Books</Link></li>
 
         <li><Link href={"/PagesToRead"}>Pages to Read</Link></li>
