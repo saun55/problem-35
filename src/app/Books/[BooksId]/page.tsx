@@ -3,7 +3,7 @@
 import ReadButton from "@/app/BooksButton/ReadButton";
 import WishlistButton from "@/app/BooksButton/WishlistButton";
 import { BookType } from "@/app/booksType/BooksType";
-
+import data from "../../../../public/booksData.json"
 
 
 
@@ -17,9 +17,12 @@ try{
 
 
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`);
-  const data =await res.json()
-  return data}
+  // const res = await fetch(`${}`);
+  // const data =await res.json()
+  // return data
+  return data
+}
+
   catch(error){
     console.error("Error fetching",error);
     
